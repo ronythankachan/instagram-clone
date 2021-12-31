@@ -4,6 +4,9 @@ import {
   HomeIcon,
   MenuIcon,
   PaperAirplaneIcon,
+  PlusCircleIcon,
+  UserGroupIcon,
+  HeartIcon,
 } from "@heroicons/react/outline";
 
 function Header() {
@@ -39,9 +42,22 @@ function Header() {
         </div>
         {/* right */}
         <div className="flex items-center justify-end space-x-4">
-          <HomeIcon className="w-10 h-10" />
+          <HomeIcon className="navBtn" />
           <MenuIcon className="h-6 md:hidden cursor-pointer" />
-          <PaperAirplaneIcon className="h-10 w-10" />
+          <div className="relative navBtn">
+            <PaperAirplaneIcon className="navBtn rotate-45" />
+            <div className="absolute -top-1 -right-2 text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white">
+              3
+            </div>
+          </div>
+          <PlusCircleIcon className="navBtn" />
+          <UserGroupIcon className="navBtn" />
+          <HeartIcon className="navBtn" />
+          <img
+            src="https://avatars.githubusercontent.com/u/19921533?v=4"
+            alt="profile pic"
+            className="h-10 rounded-full cursor-pointer "
+          />
         </div>
       </div>
     </div>
