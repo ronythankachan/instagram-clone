@@ -12,7 +12,7 @@ function Feed() {
         <Posts />
         {/* posts */}
       </section>
-      <section className="hidden xl:inline-grid md:col-span-1">
+      <section>
         <MiniProfile />
         <Suggestions />
       </section>
