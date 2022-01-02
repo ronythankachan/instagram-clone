@@ -1,5 +1,7 @@
+import MiniProfile from "./MiniProfile";
 import Posts from "./Posts";
 import Stories from "./Stories";
+import Suggestions from "./Suggestions";
 
 function Feed() {
   return (
@@ -10,9 +12,9 @@ function Feed() {
         <Posts />
         {/* posts */}
       </section>
-      <section>
-        {/* mini profile */}
-        {/* suggestions */}
+      <section className="hidden xl:inline-grid md:col-span-1">
+        <MiniProfile />
+        <Suggestions />
       </section>
     </main>
   );

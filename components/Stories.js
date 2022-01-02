@@ -1,16 +1,29 @@
 import { useEffect, useState } from "react";
-import faker from "faker";
 import Story from "./Story";
+const sugg = [
+  {
+    id: 1,
+    avatar:
+      "https://m.cricbuzz.com/a/img/v1/192x192/i1/c170661/virat-kohli.jpg",
+    username: "virat kohli",
+  },
+  {
+    id: 2,
+    avatar:
+      "https://upload.wikimedia.org/wikipedia/commons/9/98/Tom_Cruise_%2834450932580%29.jpg",
+    username: "Tom cruise",
+  },
+  {
+    id: 3,
+    avatar:
+      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Angelina_Jolie_by_Gage_Skidmore.jpg",
+    username: "Angelina jolie",
+  },
+];
 
 function Stories() {
   const [suggestions, setSuggestions] = useState([]);
   useEffect(() => {
-    const sugg = [...Array(20)].map((_, i) => ({
-      avatar: faker.image.people(),
-      username: faker.helpers.contextualCard().username,
-      id: i,
-    }));
-    console.log(suggestions);
     setSuggestions(sugg);
   }, []);
 

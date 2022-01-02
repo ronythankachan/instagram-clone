@@ -33,8 +33,12 @@ function Post({ username, userImg, img, caption }) {
       {/* input box */}
       <form className="flex p-4 items-center">
         <EmojiHappyIcon className="btn" />
-        <input type="text"  placeholder="Add a comment.." className="border-none flex-1 focus:ring-0 outline-none" />
-        <button>Post</button>
+        <input
+          type="text"
+          placeholder="Add a comment.."
+          className="border-none flex-1 focus:ring-0 outline-none"
+        />
+        <button className="text-blue-500">Post</button>
       </form>
     </div>
   );
