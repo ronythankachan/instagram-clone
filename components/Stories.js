@@ -6,18 +6,27 @@ const sugg = [
     avatar:
       "https://m.cricbuzz.com/a/img/v1/192x192/i1/c170661/virat-kohli.jpg",
     username: "virat kohli",
+    company: {
+      name: "BCC",
+    },
   },
   {
     id: 2,
     avatar:
       "https://upload.wikimedia.org/wikipedia/commons/9/98/Tom_Cruise_%2834450932580%29.jpg",
     username: "Tom cruise",
+    company: {
+      name: "Hollywood",
+    },
   },
   {
     id: 3,
     avatar:
       "https://upload.wikimedia.org/wikipedia/commons/0/0c/Angelina_Jolie_by_Gage_Skidmore.jpg",
     username: "Angelina jolie",
+    company: {
+      name: "Hollywood",
+    },
   },
 ];
 
